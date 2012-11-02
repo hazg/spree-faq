@@ -56,7 +56,7 @@
       <% end %>
 
       <div id="questions">
-        <h2>Questions</h2>
+        <h2><%= t('questions') %></h2>
         <%= link_to_with_icon 'add', t('add_question'), '#', :id => 'new_question_link' %>
 
         <%= f.fields_for :questions do |question_form| %>
