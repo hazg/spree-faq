@@ -1,3 +1,9 @@
+
+О форке
+=========
+
+Русская локаль + работает со spree 1.3.0
+
 Spree Frequently Asked Question Extension
 =========
 
