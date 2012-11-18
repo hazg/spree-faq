@@ -1,13 +1,13 @@
 module Spree
-  class FaqsController < Spree::BaseController
-    helper 'spree/base'
+  class FaqsController < Spree::StoreController
+    helper 'spree/products'
 
     def index
-      @categories = QuestionCategory.all :include => :questions
+      @categories = Spree::QuestionCategory.all :include => :questions
     end
   
     def show
-      @category = QuestionCategory.find_by_name params[:category], :include => :questions
+      @category = Spree::QuestionCategory.find_by_name params[:category], :include => :questions
       return redirect_to :faq unless @category
     end
 
